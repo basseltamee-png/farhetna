@@ -1,0 +1,125 @@
+/* تنسيق زر القائمة والهيدر */
+.navbar {
+  display: flex;
+  justify: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  letter-spacing: 4px;
+  font-family: serif;
+}
+
+/* القائمة الجانبية (Sidebar) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* مخفية خارج الشاشة */
+  width: 260px;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out;
+  z-index: 100;
+  padding: 40px 20px;
+}
+
+.sidebar.open {
+  left: 0; /* تظهر عند الفتح */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.menu-links li {
+  margin: 25px 0;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.menu-links a:hover {
+  color: #d4af37; /* لون ذهبي للمس الفخم */
+}
+
+/* الخلفية المعتمة */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+}
+/* قسم معلومات الشركة ليعمل التمرير بوضوح */
+.about-company-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* يجعل القسم بطول الشاشة بالكامل ليتضح النزول إليه */
+  background-color: #0c0c0c; /* خلفية داكنة فاخرة تتناسب مع الثيم */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-container .section-title {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif, sans-serif;
+  letter-spacing: 2px;
+  color: #d4af37; /* لون ذهبي فاخر */
+  margin-bottom: 25px;
+}
+
+.about-container .section-desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #dddddd;
+  font-family: sans-serif;
+}

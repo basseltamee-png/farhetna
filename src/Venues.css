@@ -1,0 +1,67 @@
+.venues-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212; /* خلفية فخمة تتماشى مع تصميم الموقع */
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.venues-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.venues-header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.venues-header .subtitle {
+  color: #fcfcfc; /* لون ذهبي فاخر مناسب لـ Farhetna */
+  letter-spacing: 2px;
+}
+
+.venues-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: 0 auto;
+}
+
+.venue-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.venue-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.venue-content {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.venue-content h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.venue-desc {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.venue-info span {
+  display: block;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
