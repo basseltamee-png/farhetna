@@ -233,8 +233,8 @@ const GetInvolved = ({ onAddProvider }) => {
                     onChange={handleChange} 
                     style={{ ...inputStyle, backgroundColor: '#1a1a1a', cursor: 'pointer' }}
                   >
-                    <option value="Haute Couture">Haute Couture</option>
-                    <option value="Makeup & Hair">Makeup & Hair</option>
+                    <option value="Haute Couture">Couture Houses</option>
+                    <option value="Makeup & Hair">Makeup & Hairstylists</option>
                     <option value="Venues">Venues</option>
                   </select>
                 </td>

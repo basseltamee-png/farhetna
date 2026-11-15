@@ -20,14 +20,23 @@ function App() {
 const handleAddProvider = (category, newItem) => {
   setCustomProviders((prev) => {
     const updated = { ...prev };
-    if (category === 'Venues') updated.venues = [...prev.venues, newItem];
-    if (category === 'Makeup & Hair') updated.makeup = [...prev.makeup, newItem];
-    if (category === 'Haute Couture') updated.couture = [...prev.couture, newItem];
-
+    
+    // استخدام .toLowerCase() لضمان مطابقة الفئة بغض النظر عن الحروف الكبيرة أو الصغيرة
+    const cat = category.toLowerCase();
+    
+    if (cat.includes('venue')) {
+      updated.venues = [...prev.venues, newItem];
+    } else if (cat.includes('makeup') || cat.includes('hair')) {
+      updated.makeup = [...prev.makeup, newItem];
+    } else if (cat.includes('couture') || cat.includes('haute')) {
+      updated.couture = [...prev.couture, newItem];
+    }
+    
     localStorage.setItem('farhetna_custom_providers', JSON.stringify(updated));
     return updated;
   });
 };
+
 
   return (
     <div>
@@ -96,6 +105,6 @@ const handleAddProvider = (category, newItem) => {
 {currentPage === 'get-involved' && <GetInvolved onAddProvider={handleAddProvider} />}
     </div>
   );
-}
 
+};
 export default App;

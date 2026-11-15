@@ -75,7 +75,7 @@ const Venues = ({ extraVenues = [] }) => {
 
         {/* الكروت تظهر بالتدريج واحد تلو الآخر */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '25px' }}>
-          {venuesList.map((venue, index) => (
+          {allVenues.map((venue, index) => (
             <div 
               key={venue.id} 
               className="stagger-item"

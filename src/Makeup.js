@@ -75,7 +75,8 @@ const Makeup = ({ extraMakeup = [] }) => {
 
         {/* الكروت الثلاثة جنباً إلى جنب بالتدريج */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '25px' }}>
-          {makeupList.map((artist, index) => (
+  const allMakeup = [...makeupList, ...extraMakeup];
+          {allMakeup.map((artist, index) => (
             <div 
               key={artist.id} 
               className="stagger-item"

@@ -75,7 +75,7 @@ const Couture = ({ extraCouture = [] }) => {
 
         {/* الكروت الثلاثة جنباً إلى جنب بالتدريج */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '25px' }}>
-          {coutureList.map((house, index) => (
+          {allCouture.map((house, index) => (
             <div 
               key={house.id} 
               className="stagger-item"
