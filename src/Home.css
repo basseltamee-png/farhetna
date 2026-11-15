@@ -86,23 +86,6 @@ html, body, #root, .App {
   gap: 20px;
 }
 
-.audio-toggle-btn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.audio-toggle-btn:hover {
-  border-color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .icon-btn {
   background: none;
   border: none;
@@ -303,7 +286,3 @@ html, body, #root, .App {
   background: rgba(0, 0, 0, 0.3);
   z-index: 8888;
 }
-
-/* ==========================================
-   تنسيق قسم About & Contact الشفاف والواضح
-   ========================================== */

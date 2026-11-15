@@ -29,8 +29,7 @@ const venuesList = [
 ];
 
 const Venues = ({ extraVenues = [] }) => {
-  const allVenues = [...venuesList, ...extraVenues]; // (أو حسب اسم المصفوفة بملفك)
-  // ... وبداخل الـ return استبدل المصفوفة القديمة بـ allVenues.map
+  const allVenues = [...venuesList, ...extraVenues]; 
   return (
     <div 
       className="page-transition"
@@ -50,7 +49,7 @@ const Venues = ({ extraVenues = [] }) => {
         zIndex: 10
       }}
     >
-      {/* طبقة التعتيم الخفيفة */}
+    
       <div style={{
         position: 'fixed',
         top: 0,
@@ -62,9 +61,9 @@ const Venues = ({ extraVenues = [] }) => {
         pointerEvents: 'none'
       }}></div>
 
-      {/* المحتوى */}
+      
       <div style={{ position: 'relative', zIndex: 2 }}>
-        {/* العنوان يظهر أولاً */}
+        
         <header 
           className="stagger-item" 
           style={{ textAlign: 'center', marginBottom: '50px', animationDelay: '0.1s' }}
@@ -73,7 +72,7 @@ const Venues = ({ extraVenues = [] }) => {
           <h1 style={{ fontSize: '2.5rem', color: '#eb7470', margin: '10px 0' }}>VENUES</h1>
         </header>
 
-        {/* الكروت تظهر بالتدريج واحد تلو الآخر */}
+ 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '25px' }}>
           {allVenues.map((venue, index) => (
             <div 
@@ -86,7 +85,7 @@ const Venues = ({ extraVenues = [] }) => {
                 boxShadow: '0 8px 25px rgba(0,0,0,0.6)', 
                 backdropFilter: 'blur(8px)',
                 border: '1px solid rgba(212, 175, 55, 0.2)',
-                // تأخير ظهور كل كرت بمقدار 0.25 ثانية عن الذي قبله
+          
                 animationDelay: `${0.8 + index * 0.55}s` 
               }}
             >

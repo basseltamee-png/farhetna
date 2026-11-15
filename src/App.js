@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Home.css'; // استدعينا تنسيقاتك الأصلية للشريط والقائمة
+import './Home.css'; 
 import Home from './Home';
 import Venues from './Venues';
 import Makeup from './Makeup';
@@ -21,7 +21,6 @@ const handleAddProvider = (category, newItem) => {
   setCustomProviders((prev) => {
     const updated = { ...prev };
     
-    // استخدام .toLowerCase() لضمان مطابقة الفئة بغض النظر عن الحروف الكبيرة أو الصغيرة
     const cat = category.toLowerCase();
     
     if (cat.includes('venue')) {
@@ -36,11 +35,9 @@ const handleAddProvider = (category, newItem) => {
     return updated;
   });
 };
-
-
   return (
     <div>
-      {/* الشريط العلوي الأصلي ثابت بكل الصفحات */}
+   
       <header className="luxury-navbar" style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 9999 }}>
         <div className="nav-left">
           <button className="menu-btn" aria-label="Menu" onClick={toggleMenu}>
@@ -62,7 +59,6 @@ const handleAddProvider = (category, newItem) => {
         <div className="nav-right"></div>
       </header>
 
-      {/* القائمة الجانبية الأصلية ثابتة بكل الصفحات */}
       <div className={`sidebar ${isMenuOpen ? 'open' : ''}`} style={{ zIndex: 10000 }}>
         <button className="close-btn" onClick={toggleMenu}>&times;</button>
         <ul className="menu-links">
@@ -91,13 +87,9 @@ const handleAddProvider = (category, newItem) => {
     Get Involved
   </a>
 </li>
-        
         </ul>
       </div>
-
       {isMenuOpen && <div className="overlay" onClick={toggleMenu} style={{ zIndex: 9995 }}></div>}
-
-      {/* عرض الصفحة المطلوبة */}
       {currentPage === 'home' && <Home />}
 {currentPage === 'venues' && <Venues extraVenues={customProviders.venues} />}
 {currentPage === 'makeup' && <Makeup extraMakeup={customProviders.makeup} />}

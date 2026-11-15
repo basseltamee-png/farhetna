@@ -22,34 +22,34 @@ const GetInvolved = ({ onAddProvider }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // 1. Name validation: letters only
+   
     const nameRegex = /^[A-Za-z\s]+$/;
     if (!formData.name.trim() || !nameRegex.test(formData.name)) {
       setError('Error: Name must contain letters only (no numbers or symbols).');
       return;
     }
 
-    // 2. Description validation
+  
     if (!formData.description.trim()) {
       setError('Error: Please enter a description.');
       return;
     }
 
-    // 3. Phone validation: exactly 8 digits
+
     const phoneRegex = /^\d{8}$/;
     if (!phoneRegex.test(formData.phone)) {
       setError('Error: Phone number must be exactly 8 digits.');
       return;
     }
 
-    // 4. Email validation
+   
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setError('Error: Please enter a valid email address.');
       return;
     }
 
-    // 5. Location validation
+  
     if (!formData.location.trim()) {
       setError('Error: Please enter a location.');
       return;
@@ -96,7 +96,7 @@ const GetInvolved = ({ onAddProvider }) => {
         zIndex: 10
       }}
     >
-      {/* Dark Overlay for luxury contrast */}
+  
       <div style={{
         position: 'fixed',
         top: 0,
@@ -142,7 +142,6 @@ const GetInvolved = ({ onAddProvider }) => {
               />
             </div>
 
-            {/* Description */}
             <div>
               <label style={{ display: 'block', color: '#655a07', fontSize: '0.85rem', marginBottom: '5px', fontWeight: 'bold' }}>Description</label>
               <textarea 
@@ -155,7 +154,7 @@ const GetInvolved = ({ onAddProvider }) => {
               />
             </div>
 
-            {/* Phone */}
+            
             <div>
               <label style={{ display: 'block', color: '#655a07', fontSize: '0.85rem', marginBottom: '5px', fontWeight: 'bold' }}>Phone (8 Digits)</label>
               <input 
@@ -168,7 +167,7 @@ const GetInvolved = ({ onAddProvider }) => {
               />
             </div>
 
-            {/* Email */}
+         
             <div>
               <label style={{ display: 'block', color: '#655a07', fontSize: '0.85rem', marginBottom: '5px', fontWeight: 'bold' }}>Email</label>
               <input 
@@ -181,7 +180,7 @@ const GetInvolved = ({ onAddProvider }) => {
               />
             </div>
 
-            {/* Location */}
+            
             <div>
               <label style={{ display: 'block', color: '#655a07', fontSize: '0.85rem', marginBottom: '5px', fontWeight: 'bold' }}>Location</label>
               <input 
@@ -194,7 +193,7 @@ const GetInvolved = ({ onAddProvider }) => {
               />
             </div>
 
-            {/* Category Selection */}
+        
             <div>
               <label style={{ display: 'block', color: '#655a07', fontSize: '0.85rem', marginBottom: '5px', fontWeight: 'bold' }}>Category</label>
               <select 
@@ -211,7 +210,6 @@ const GetInvolved = ({ onAddProvider }) => {
 
           </div>
 
-          {/* Error / Success Messages */}
           {error && (
             <div style={{ backgroundColor: 'rgba(220, 53, 69, 0.2)', border: '1px solid #dc3545', color: '#ff6b6b', padding: '8px', borderRadius: '6px', marginTop: '15px', textAlign: 'center', fontSize: '0.9rem' }}>
               {error}

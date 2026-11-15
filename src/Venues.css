@@ -1,7 +1,7 @@
 .venues-page {
   width: 100%;
   min-height: 100vh;
-  background-color: #121212; /* خلفية فخمة تتماشى مع تصميم الموقع */
+  background-color: #121212; 
   padding: 40px 20px;
   box-sizing: border-box;
 }
@@ -18,7 +18,7 @@
 }
 
 .venues-header .subtitle {
-  color: #fcfcfc; /* لون ذهبي فاخر مناسب لـ Farhetna */
+  color: #fcfcfc;
   letter-spacing: 2px;
 }
 

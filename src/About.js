@@ -64,7 +64,7 @@ function About() {
           <p className="section-desc">{storySteps[currentSlide].text}</p>
 
           <div className="carousel-controls">
-            {/* استخدام ترويسة onMouseDown بالإضافة لـ onClick لمنع أي حركة مسبقة */}
+        
             <button 
               type="button" 
               className="carousel-arrow" 

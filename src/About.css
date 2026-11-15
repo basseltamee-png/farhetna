@@ -1,12 +1,12 @@
 .about-company-section {
   position: relative;
-animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
- z-index: 10;
+  animation: fadeInSection 5s cubic-bezier(0.16, 0.99, 0.3, 1);
+  z-index: 10;
   width: 100%;
   min-height: 100vh;
-  background: transparent;
+  background: transparent; 
   backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(1px);
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -15,17 +15,18 @@ animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
-@keyframes fadeInSection{
-    0%{
-        opacity: 1;
-        transform: translateY(70px);
-    }
-    100%{
-        opacity: 2;
-        transform: translateY(0px);
-    }
+
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-/* حاوية القصة لتثبيت أبعاد العناصر أثناء الانتقال */
+
 .story-carousel {
   position: relative;
   width: 100%;
@@ -36,21 +37,22 @@ animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
   justify-content: center;
 }
 
-/* إضافة تأثير التلاشي البطيء (Fade Animation) عند تغيير محتوى السلايدر */
+
 .story-tag, .section-title, .title-underline, .story-subtitle, .section-desc {
   animation: slowFadeContent 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes slowFadeContent {
   0% {
-    opacity: 2;
+    opacity: 0;
     transform: translateY(30px);
   }
   100% {
-    opacity: 4;
+    opacity: 1;
     transform: translateY(15px);
   }
 }
+
 .about-container {
   min-height: 80vh;
   justify-content: space-between;
@@ -73,7 +75,6 @@ animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
   margin-bottom: 5px;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
-
 
 .story-subtitle {
   font-size: 1.4rem;
@@ -144,7 +145,7 @@ animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
   border-radius: 10px;
 }
 
-/* قسم التواصل مرتب بشكل عمودي تحته */
+
 .contact-content {
   width: 100%;
   border-top: 1px solid rgba(212, 175, 55, 0.3);
@@ -164,7 +165,7 @@ animation: fadeInSection 3s cubic-bezier(0.16, 0.99, 0.3, 1) ;
 .contact-details {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   gap: 12px;
 }
 

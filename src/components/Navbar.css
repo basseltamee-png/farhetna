@@ -1,4 +1,4 @@
-/* تنسيق زر القائمة والهيدر */
+
 .navbar {
   display: flex;
   justify: space-between;
@@ -25,11 +25,11 @@
   font-family: serif;
 }
 
-/* القائمة الجانبية (Sidebar) */
+
 .sidebar {
   position: fixed;
   top: 0;
-  left: -300px; /* مخفية خارج الشاشة */
+  left: -300px; 
   width: 260px;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.95);
@@ -41,7 +41,7 @@
 }
 
 .sidebar.open {
-  left: 0; /* تظهر عند الفتح */
+  left: 0;
 }
 
 .close-btn {
@@ -75,10 +75,10 @@
 }
 
 .menu-links a:hover {
-  color: #b56e03; /* لون ذهبي للمس الفخم */
+  color: #b56e03; 
 }
 
-/* الخلفية المعتمة */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -88,12 +88,12 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 90;
 }
-/* قسم معلومات الشركة ليعمل التمرير بوضوح */
+
 .about-company-section {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* يجعل القسم بطول الشاشة بالكامل ليتضح النزول إليه */
-  background-color: #0c0c0c; /* خلفية داكنة فاخرة تتناسب مع الثيم */
+  min-height: 100vh; 
+  background-color: #0c0c0c; 
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@
   font-size: 36px;
   font-family: 'Playfair Display', serif, sans-serif;
   letter-spacing: 2px;
-  color: #b56e03; /* لون ذهبي فاخر */
+  color: #b56e03; 
   margin-bottom: 25px;
 }
 

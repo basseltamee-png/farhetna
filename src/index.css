@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* 1. حركة ظهور الصفحة بالكامل بنعومة (Fade) */
+
 @keyframes pageFadeIn {
   from {
     opacity: 0;
@@ -25,7 +25,7 @@ code {
   animation: pageFadeIn 1.5s ease-in-out forwards;
 }
 
-/* 2. حركة ظهور العناصر والكروت بالتدريج من الأسفل للأعلى */
+
 @keyframes itemSlideUp {
   0% {
     opacity: 0;
@@ -38,6 +38,6 @@ code {
 }
 
 .stagger-item {
-  opacity: 0; /* يبدأ مخفياً قبل بدء الأنيميشن */
+  opacity: 0; 
   animation: itemSlideUp 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }

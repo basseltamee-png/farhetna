@@ -10,7 +10,7 @@ const Navbar = ({onSelectPage}) => {
 
   return (
     <>
-      {/* الهيدر العلوي */}
+  
       <nav className="navbar">
         <button className="menu-btn" onClick={toggleMenu}>
           &#9776;
@@ -18,7 +18,7 @@ const Navbar = ({onSelectPage}) => {
       
       </nav>
 
-      {/* القائمة الجانبية (Sidebar) */}
+    
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <button className="close-btn" onClick={toggleMenu}>
           &times;
@@ -31,7 +31,7 @@ const Navbar = ({onSelectPage}) => {
         </ul>
       </div>
 
-      {/* خلفية معتمة عند فتح القائمة */}
+   
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
     </>
   );

@@ -30,7 +30,7 @@ const coutureList = [
 
 const Couture = ({ extraCouture = [] }) => {
   const allCouture = [...coutureList, ...extraCouture];
-  // ... وبداخل الـ return استبدل coutureList.map بـ allCouture.map
+
   return (
     <div 
       className="page-transition"
@@ -40,7 +40,7 @@ const Couture = ({ extraCouture = [] }) => {
         left: 0,
         width: '100vw',
         height: '100vh',
-        backgroundImage: `url('/haute couture.jpeg')`, // فيك تغير مسار الصورة هون إذا عندك صورة مخصصة للفساتين
+        backgroundImage: `url('/haute couture.jpeg')`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -50,7 +50,6 @@ const Couture = ({ extraCouture = [] }) => {
         zIndex: 10
       }}
     >
-      {/* طبقة التعتيم الخفيفة */}
       <div style={{
         position: 'fixed',
         top: 0,
@@ -62,9 +61,9 @@ const Couture = ({ extraCouture = [] }) => {
         pointerEvents: 'none'
       }}></div>
 
-      {/* المحتوى */}
+  
       <div style={{ position: 'relative', zIndex: 2 }}>
-        {/* العنوان يظهر أولاً */}
+     
         <header 
           className="stagger-item" 
           style={{ textAlign: 'center', marginBottom: '50px', animationDelay: '0.2s' }}
@@ -72,8 +71,6 @@ const Couture = ({ extraCouture = [] }) => {
           <p style={{ color: '#d6836c', letterSpacing: '3px', fontWeight: 'bold' }}>TIMELESS ELEGANCE</p>
           <h1 style={{ fontSize: '2.5rem', color: '#fff', margin: '10px 0' }}>COUTURE HOUSES</h1>
         </header>
-
-        {/* الكروت الثلاثة جنباً إلى جنب بالتدريج */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '25px' }}>
           {allCouture.map((house, index) => (
             <div 
