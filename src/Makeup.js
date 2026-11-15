@@ -28,7 +28,9 @@ const makeupList = [
   }
 ];
 
-const Makeup = () => {
+const Makeup = ({ extraMakeup = [] }) => {
+  const allMakeup = [...makeupList, ...extraMakeup];
+  // ... وبداخل الـ return استبدل makeupList.map بـ allMakeup.map
   return (
     <div 
       className="page-transition"

@@ -28,7 +28,9 @@ const venuesList = [
   }
 ];
 
-const Venues = () => {
+const Venues = ({ extraVenues = [] }) => {
+  const allVenues = [...venuesList, ...extraVenues]; // (أو حسب اسم المصفوفة بملفك)
+  // ... وبداخل الـ return استبدل المصفوفة القديمة بـ allVenues.map
   return (
     <div 
       className="page-transition"

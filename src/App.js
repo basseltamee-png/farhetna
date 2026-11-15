@@ -4,6 +4,7 @@ import Home from './Home';
 import Venues from './Venues';
 import Makeup from './Makeup';
 import Couture from './Couture';
+import GetInvolved from './GetInvolved';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,22 @@ function App() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const [customProviders, setCustomProviders] = useState(() => {
+  const saved = localStorage.getItem('farhetna_custom_providers');
+  return saved ? JSON.parse(saved) : { venues: [], makeup: [], couture: [] };
+});
+
+const handleAddProvider = (category, newItem) => {
+  setCustomProviders((prev) => {
+    const updated = { ...prev };
+    if (category === 'Venues') updated.venues = [...prev.venues, newItem];
+    if (category === 'Makeup & Hair') updated.makeup = [...prev.makeup, newItem];
+    if (category === 'Haute Couture') updated.couture = [...prev.couture, newItem];
+
+    localStorage.setItem('farhetna_custom_providers', JSON.stringify(updated));
+    return updated;
+  });
+};
 
   return (
     <div>
@@ -60,6 +77,11 @@ function App() {
               Couture Houses
             </a>
           </li>
+          <li>
+  <a href="#!" onClick={(e) => { e.preventDefault(); toggleMenu(); setCurrentPage('get-involved'); }}>
+    Get Involved
+  </a>
+</li>
         
         </ul>
       </div>
@@ -68,9 +90,10 @@ function App() {
 
       {/* عرض الصفحة المطلوبة */}
       {currentPage === 'home' && <Home />}
-      {currentPage === 'venues' && <Venues />}
-       {currentPage === 'makeup' && <Makeup />}
-        {currentPage === 'couture' && <Couture />}
+{currentPage === 'venues' && <Venues extraVenues={customProviders.venues} />}
+{currentPage === 'makeup' && <Makeup extraMakeup={customProviders.makeup} />}
+{currentPage === 'couture' && <Couture extraCouture={customProviders.couture} />}
+{currentPage === 'get-involved' && <GetInvolved onAddProvider={handleAddProvider} />}
     </div>
   );
 }

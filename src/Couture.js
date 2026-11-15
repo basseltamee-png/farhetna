@@ -28,7 +28,9 @@ const coutureList = [
   }
 ];
 
-const Couture = () => {
+const Couture = ({ extraCouture = [] }) => {
+  const allCouture = [...coutureList, ...extraCouture];
+  // ... وبداخل الـ return استبدل coutureList.map بـ allCouture.map
   return (
     <div 
       className="page-transition"
