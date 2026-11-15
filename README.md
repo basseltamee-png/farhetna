@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Farhetna - Luxury Wedding Planning Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive frontend web application developed as part of the **CSCI426: Advanced Web Programming** course. Farhetna is designed to streamline the wedding planning experience by bringing venues, couture houses, and beauty services into one elegant platform.
 
-## Available Scripts
+## Features
+- **Responsive Design:** Optimized for both desktop and mobile screens.
+- **Dynamic Pages & Routing:** Seamless navigation across Home, Venues, Makeup & Hair, Haute Couture, and Get Involved.
+- **Interactive Form Handling & Validation:** Users can add new service providers with strict input validations (letters-only names, 8-digit phone numbers, valid emails).
+- **Persistent Storage:** Utilizes `localStorage` to save dynamic entries across user sessions.
+- **Luxury UI/UX:** Styled using ReactJS and custom CSS3 featuring Glassmorphism effects and smooth animations.
 
-In the project directory, you can run:
+## Technologies Used
+- **Frontend:** ReactJS, HTML5, CSS3
+- **Styling:** Custom CSS, Glassmorphism, Keyframes
+- **Version Control:** Git & GitHub
 
-### `npm start`
+## Setup & Installation Instructions
+To run this project locally on your machine, follow these steps:
+1.Navigate to the project directory:
+cd farhetna
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.Install dependencies:
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.Start the development server:
+npm start
 
-### `npm test`
+4.finally
+Open your browser and go to http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+UI Screenshots
+Home page: 
+<img width="2499" height="1134" alt="image" src="https://github.com/user-attachments/assets/2bd97a88-8369-44b2-aeb1-4b5101d3fed9" /> 
+Venues page:
+<img width="2517" height="1141" alt="image" src="https://github.com/user-attachments/assets/b00ed40d-2b15-4ac0-bd13-16d011c6779e" />
+Makeup & hairstylists page: 
+<img width="2523" height="1127" alt="image" src="https://github.com/user-attachments/assets/b3a13671-41ee-4fba-9370-3deb05bf5ad2" />
+Haute Coutures page: 
+<img width="2522" height="1141" alt="image" src="https://github.com/user-attachments/assets/27094a80-6be5-4833-859d-5d4eb4452da5" />
+Get Involve page:
+<img width="2527" height="1153" alt="image" src="https://github.com/user-attachments/assets/bdf81fc5-9bd1-46b5-a0b7-b0d4ecf79798" />
+Who's Farhetna "About" page linked with "Home" Page:
+<img width="2505" height="1401" alt="image" src="https://github.com/user-attachments/assets/e19ae2d3-70a6-409f-981f-aab3ce4e750a" />
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/basseltamee-png/farhetna.git](https://github.com/basseltamee-png/farhetna.git)
