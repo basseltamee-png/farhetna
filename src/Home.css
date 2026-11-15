@@ -290,7 +290,7 @@ html, body, #root, .App {
 }
 
 .menu-links a:hover {
-  color: #d4af37 !important;
+  color: #b56e03 !important;
   transform: translateX(5px);
 }
 

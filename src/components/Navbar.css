@@ -75,7 +75,7 @@
 }
 
 .menu-links a:hover {
-  color: #d4af37; /* لون ذهبي للمس الفخم */
+  color: #b56e03; /* لون ذهبي للمس الفخم */
 }
 
 /* الخلفية المعتمة */
@@ -113,7 +113,7 @@
   font-size: 36px;
   font-family: 'Playfair Display', serif, sans-serif;
   letter-spacing: 2px;
-  color: #d4af37; /* لون ذهبي فاخر */
+  color: #b56e03; /* لون ذهبي فاخر */
   margin-bottom: 25px;
 }
 

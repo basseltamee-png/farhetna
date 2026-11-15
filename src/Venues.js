@@ -40,10 +40,10 @@ const Venues = ({ extraVenues = [] }) => {
         left: 0,
         width: '100vw',
         height: '100vh',
-        backgroundImage: `url('/venues.jpeg')`, 
+        backgroundImage: `url('/venues.png')`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'repeat',
         overflowY: 'auto',
         padding: '120px 40px 40px 40px',
         boxSizing: 'border-box',
@@ -57,7 +57,7 @@ const Venues = ({ extraVenues = [] }) => {
         left: 0,
         width: '100vw',
         height: '100vh',
-        backgroundColor: 'rgba(0, 0, 0, 0.45)',
+        backgroundColor: 'rgba(53, 51, 51, 0.45)',
         zIndex: 1,
         pointerEvents: 'none'
       }}></div>
@@ -70,7 +70,7 @@ const Venues = ({ extraVenues = [] }) => {
           style={{ textAlign: 'center', marginBottom: '50px', animationDelay: '0.1s' }}
         >
           <p style={{ color: '#fdfdfc', letterSpacing: '3px', fontWeight: 'bold' }}>EVERYTHING AT ONE PLACE</p>
-          <h1 style={{ fontSize: '2.5rem', color: '#eda509', margin: '10px 0' }}>VENUES</h1>
+          <h1 style={{ fontSize: '2.5rem', color: '#eb7470', margin: '10px 0' }}>VENUES</h1>
         </header>
 
         {/* الكروت تظهر بالتدريج واحد تلو الآخر */}
