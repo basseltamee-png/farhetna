@@ -43,5 +43,4 @@ Who's Farhetna "About" page linked with "Home" Page:
 <img width="2505" height="1401" alt="image" src="https://github.com/user-attachments/assets/e19ae2d3-70a6-409f-981f-aab3ce4e750a" />
 
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/basseltamee-png/farhetna.git](https://github.com/basseltamee-png/farhetna.git)
+      git clone [https://github.com/basseltamee-png/farhetna.git]
